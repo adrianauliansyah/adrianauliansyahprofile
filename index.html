@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pribadi - ADRIAN AULIANSYAH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">MyProfile</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <button id="darkToggle" class="dark-btn">🌙</button>
+  </header>
+
+  <main>
+    <!-- Section 1: Beranda -->
+    <section id="home" class="section active">
+      <div class="content">
+        <img src="foto diri.jpg" alt="Foto Diri" class="profile-img" />
+        <h2>Halo, Saya <span>ADRIAN AULIANSYAH</span></h2>
+        <p>halo Saya
+          saya pelajar mahasiswa unila dari prodi pti ingin membuat profil sederhana.</p>
+        <button class="glow" id="welcomeBtn">Mulai Jelajahi 🚀</button>
+      </div>
+    </section>
+
+    <!-- Section 2: Tentang Saya -->
+    <section id="about" class="section">
+      <h2>Tentang Saya</h2>
+      <div class="about-grid">
+        <div>
+          <h3>Biodata</h3>
+          <p>Nama: ADRIAN AULIANSYAH<br>Tempat/Tanggal Lahir: Bandar lampung,16 juli 2005<br>Alamat: Btn3 wayhalim,Bandar Lampung,indonesia </p>
+        </div>
+        <div>
+          <h3>Pendidikan</h3>
+          <p>Pelajar Universitas Lampung - Program Studi Pendidikan Teknologi Informasi</p>
+        </div>
+        <div>
+          <h3>Minat & Keahlian</h3>
+          <p>Web Development,JavaScript, dan Desain Grafis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Portofolio -->
+    <section id="portfolio" class="section">
+      <h2>Portofolio</h2>
+      <div class="portfolio-grid">
+        <div class="card">
+
+          <h4>Proyek 1</h4>
+          <p>membuat wbsite profile sekolah.</p>
+        </div>
+        <div class="card">
+  
+          <h4>Proyek 2</h4>
+          <p>Desain Aplikasi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Kontak -->
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nama Anda" />
+        <input type="email" id="email" placeholder="Email Anda" />
+        <textarea id="message" placeholder="Tulis pesan..."></textarea>
+        <button type="submit" class="glow">Kirim Pesan</button>
+        <p id="msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 wbsiteprofiladrian</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
