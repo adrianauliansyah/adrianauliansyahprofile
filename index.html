@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pribadi - Adrian Auliansyah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Adrian Auliansyah</h1>
+    <nav>
+      <a href="#" data-page="home" class="active">Beranda</a>
+      <a href="#" data-page="about">Tentang Saya</a>
+      <a href="#" data-page="portfolio">Portofolio</a>
+      <a href="#" data-page="contact">Kontak</a>
+    </nav>
+    <button id="darkToggle" class="btn">🌙</button>
+  </header>
+
+  <main>
+    <!-- Halaman Beranda -->
+    <section id="home" class="active fade">
+      <div class="hero">
+        <img src="foto diri.jpg" alt="Foto Diri" class="profile-pic" />
+        <h2>Halo, Saya <span>Adrian Auliansyah</span></h2>
+        <p>Mahasiswa Pendidikan Teknologi Informasi yang suka membuat website interaktif dan modern.</p>
+        <button id="exploreBtn" class="btn">Mulai Jelajahi 🚀</button>
+      </div>
+    </section>
+
+    <!-- Halaman Tentang Saya -->
+    <section id="about" class="fade">
+      <h2>Tentang Saya</h2>
+      <div class="card">
+        <p><b>Nama:</b> Adrian Auliansyah</p>
+        <p><b>Pendidikan:</b> pelajar Universitas Lampung</p>
+        <p><b>Minat:</b> Desain Web, Pemrograman, Multimedia</p>
+        <p><b>Keahlian:</b> HTML, CSS, JavaScript, UI/UX</p>
+      </div>
+    </section>
+
+    <!-- Halaman Portofolio -->
+    <section id="portfolio" class="fade">
+      <h2>Portofolio</h2>
+      <div class="card">
+        <ul>
+          <li> Website Sekolah</li>
+          <li> Desain website</li>
+          <li> Desain aplikasi</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Halaman Kontak -->
+    <section id="contact" class="fade">
+      <h2>Hubungi Saya</h2>
+      <div class="card">
+        <form id="contactForm">
+          <label>Nama:</label>
+          <input type="text" id="name" required />
+          <label>Email:</label>
+          <input type="email" id="email" required />
+          <label>Pesan:</label>
+          <textarea id="message" rows="4" required></textarea>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+        <p id="formMsg"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Web Profile - All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
